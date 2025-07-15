@@ -7,8 +7,8 @@ public class ArithmeticOperations {
         int a = scanner(1);
         int b = scanner(2);
         int c = scanner(3);
-        int value = a+b*c-b;
-        System.out.print("Sonuç : " + value);
+        int result = a+b*c-b;
+        System.out.print("Sonuç : " + result);
     }
 
     public static int scanner(int i){
