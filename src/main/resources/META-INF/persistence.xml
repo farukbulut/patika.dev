@@ -23,4 +23,22 @@
             <property name="hibernate.hbm2ddl.auto" value="update"/>
         </properties>
     </persistence-unit>
+
+    <persistence-unit name="library">
+        <properties>
+            <!-- Veritabanı Driver ve URL Ayarları -->
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/library"/>
+
+            <!-- Veritabanı Kullanıcı Adı ve Şifre -->
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="2309"/>
+
+            <!-- Hibernate Show SQL Ayarı -->
+            <property name="hibernate.show_sql" value="true"/>
+
+            <!-- Veritabanını Droplama ve Yeniden Oluşturma Ayarı -->
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+        </properties>
+    </persistence-unit>
 </persistence>
